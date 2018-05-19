@@ -1,0 +1,10 @@
+version: '3'
+services:
+  pvpgn:
+    build: .
+    image: my_pvpgn:latest
+    ports:
+      - "6200:6200"
+      - "6112:6112"
+    volumes:
+      - /opt/pvpgn/users:/var/lib/pvpgn/users
